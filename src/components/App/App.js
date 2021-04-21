@@ -1,8 +1,20 @@
 import React from 'react';
+import {GlobalStyle} from './GlobalStyle';
+import {
+  AppWrapper,
+  AppContent,
+  AppNavigation,
+} from './AppElements';
 
-const App = () => {
+function App() {
   return (
-    <h1>SoftCorp test task</h1>
+    <>
+      <GlobalStyle/>
+      <AppWrapper>
+        <AppNavigation/>
+        <AppContent/>
+      </AppWrapper>
+    </>
   );
 }
 
