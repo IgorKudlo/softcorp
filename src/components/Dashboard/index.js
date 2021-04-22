@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {DashboardHead, DashboardTitle} from './DashboardElements';
 import {MONTHS} from './stubs';
 import Select from '../Select';
+import Table from '../Table';
 
 const Dashboard = () => {
 
@@ -17,10 +18,13 @@ const Dashboard = () => {
   };
 
   return (
-    <DashboardHead>
-      <DashboardTitle>All Shifts for <span>{month} {currentYear}</span></DashboardTitle>
-      <Select options={MONTHS} handleChange={handleChangeMonth} currentYear={currentYear} />
-    </DashboardHead>
+    <>
+      <DashboardHead>
+        <DashboardTitle>All Shifts for <span>{month} {currentYear}</span></DashboardTitle>
+        <Select options={MONTHS} handleChange={handleChangeMonth} currentYear={currentYear} />
+      </DashboardHead>
+      <Table/>
+    </>
   )
 }
 
