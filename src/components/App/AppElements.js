@@ -28,6 +28,14 @@ export const AppNavigationProfile = styled(Profile)`
 
 export const AppContent = styled.div`
   flex-grow: 1;
+  padding: 44px 42px 44px 60px;
   min-height: 100vh;
   background-color: #fff;
+`;
+
+export const AppContentTop = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
 `;
