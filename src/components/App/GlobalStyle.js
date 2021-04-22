@@ -23,5 +23,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     color: var(--black);
+    overflow: ${props => props.overflow === true ? 'hidden' : 'initial'};
   }
 `;

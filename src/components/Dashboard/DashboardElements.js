@@ -5,6 +5,11 @@ export const DashboardHead = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const DashboardTitle = styled.h1`
@@ -15,5 +20,11 @@ export const DashboardTitle = styled.h1`
 
   span {
     color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 29px;
   }
 `;

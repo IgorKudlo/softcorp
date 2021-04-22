@@ -7,8 +7,10 @@ import administration from '../../img/administration.svg';
 import tracking from '../../img/tracking.svg';
 
 export const NavStyled = styled.nav`
-  position: relative;
-`
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export const NavList = styled.ul`
   margin: 0;
@@ -31,6 +33,12 @@ export const NavLink = styled.a`
 
   &:hover {
     opacity: .8;
+  }
+
+  @media (max-width: 768px) {
+    display: inline-flex;
+    padding: 6px 12px;
+    font-size: 12px;
   }
 
   &::before {
